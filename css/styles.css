@@ -132,20 +132,22 @@ header {
 .current::after {
     content: "";
     display: block;
-    width:100%;
-    height: 2px;
-    background-color: #404BBF;
+    margin-top: 24px;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(64, 75, 191, 1);
+    border-radius: 2px;
 }
 
 .navigation-link {
     color:var(--dark);
     
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-link:hover, 
 .navigation-link:focus {
-    transform: var(--primary-brand)
+    color: var(--primary-brand);
 }
 .cotacts-list {
     display: flex;
@@ -160,6 +162,8 @@ header {
 
 .contacts-link {
     color: var(--text);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover, 
@@ -201,6 +205,8 @@ header {
     letter-spacing: 0.04em;    
     color: #FFFFFF;
     background-color: var(--primary-brand);
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover, 
@@ -354,6 +360,8 @@ header {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -382,16 +390,21 @@ header {
     border-radius: 4px;
     width: 168px;
     height: 88px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link {
     display: flex;
     justify-content: center;
     padding-top: 16px;
     padding-bottom: 16px;
+
 }
 
 .customers-icon {
     fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
@@ -459,6 +472,8 @@ footer {
     width: 40px;
     height: 40px;
     column-gap: 16px;
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -504,6 +519,8 @@ footer {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-button:hover, 
@@ -511,14 +528,11 @@ footer {
     color: #FFFFFF;
     background-color: var(--primary-brand);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 
  /* SERVICES */
 
-.portfolio-services {
-}
 .portf-serv-list {
     display: flex;
     flex-wrap: wrap;
@@ -530,6 +544,8 @@ footer {
     width: 360px;
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-serv-item:hover {
